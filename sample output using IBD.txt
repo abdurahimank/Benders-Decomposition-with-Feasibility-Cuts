@@ -1,0 +1,13 @@
+SOLVING MASTER PROBLEM
+Master Problem Solution Status: Optimal
+Objective Value: -3
+Y1 : 0
+Y2 : 3
+Y3 : 1
+X1 : 0
+X2 : 0
+X3 : 0
+
+C:\Users\laluv\OneDrive - Indian Institute of Management Ahmedabad\Desktop\Git\Repos\Benders-Decomposition-with-Feasibility-Cuts\x64\Debug\Benders-Decomposition-with-Feasibility-Cuts.exe (process 15408) exited with code 0 (0x0).
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
