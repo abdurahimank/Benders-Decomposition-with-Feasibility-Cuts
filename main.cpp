@@ -149,10 +149,12 @@ int main(int argc, char** argv)
 				cout << "Upper_bound = " << Upper_bound << endl;
 
 				//Add Cut to the Master Problem
-				cout << "Optimality Cut Added to Master Problem: " << "theta + " << (-5 * X_dual_val[0] - 4 * X_dual_val[1]) << " Y1 + " 
-					<< (3 * X_dual_val[0] - 2 * X_dual_val[2]) << " Y2 + " << (-7 * X_dual_val[0] - 4 * X_dual_val[1]) << " Y3 >= " << 2 * X_dual_val[0] - 10 * X_dual_val[1] << endl;
+				//cout << "Optimality Cut Added to Master Problem: " << "theta + " << (-5 * X_dual_val[0] - 4 * X_dual_val[1]) << " Y1 + " << (3 * X_dual_val[0] - 2 * X_dual_val[2]) << " Y2 + " << (-7 * X_dual_val[0] - 4 * X_dual_val[1]) << " Y3 >= " << (2 * X_dual_val[0]) - (10 * X_dual_val[1]) << endl;
 				model_master.add(theta_var + (-5*X_dual_val[0] - 4*X_dual_val[1]) * Y[0] + (3 * X_dual_val[0] - 2 * X_dual_val[1]) * Y[1] + (-7 * X_dual_val[0] - 4 * X_dual_val[1]) * Y[2] >=
 					2 * X_dual_val[0] - 10 * X_dual_val[1]);
+				cout << "Optimality Cut Added to Master Problem: " << "theta + " << (-5 * X_dual_val[0] - 4 * X_dual_val[1]) << " Y1 + "
+					<< (3 * X_dual_val[0] - 2 * X_dual_val[1]) << " Y2 + " << (-7 * X_dual_val[0] - 4 * X_dual_val[1]) << " Y3 >= " << 2 * X_dual_val[0] - 10 * X_dual_val[1] << endl;
+
 			}
 
 			if (cplex_sub.getCplexStatus() == CPX_STAT_UNBOUNDED)

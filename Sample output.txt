@@ -44,4 +44,15 @@ Sub Problem Solution Status: Optimal
 X_dual = [0, 3]
 sub_obj_val = 0
 Upper_bound = -3
-Optimality Cut Added to Master Problem: theta + -12 Y1 +
+Optimality Cut Added to Master Problem: theta + -12 Y1 + -6 Y2 + -12 Y3 >= -30
+SOLVING MASTER PROBLEM
+Master Problem Solution Status: Optimal
+theta_var = 0
+Y1 = 0
+Y2 = 3
+Y3 = 1
+Lower_bound = -3
+
+C:\Users\laluv\OneDrive - Indian Institute of Management Ahmedabad\Desktop\Git\Repos\Benders-Decomposition-with-Feasibility-Cuts\x64\Debug\Benders-Decomposition-with-Feasibility-Cuts.exe (process 18056) exited with code 0 (0x0).
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
